@@ -33,6 +33,7 @@ gs -q -dBATCH -dNOPAUSE -sDEVICE=pdfwrite \
    -sOutputFile="$tmpdir""/doc5.pdf" \
    -f "$tmpdir""/doc4.pdf"
 
-mv "$tmpdir""/doc5.pdf" "$dirout""/""$fname""_2a.pdf"
+mv "$filein" "$filein"".old"
+mv "$tmpdir""/doc5.pdf" "$filein"
 rm "$tmpdir""/doc1.pdf" "$tmpdir""/doc1.pdf_original" "$tmpdir""/doc2.pdf" "$tmpdir""/doc3.pdf" "$tmpdir""/doc4.pdf"
 rmdir "$tmpdir"
