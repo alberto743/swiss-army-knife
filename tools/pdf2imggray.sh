@@ -27,7 +27,7 @@ pdftk $(ls input-*.pdf) cat output output.pdf
 
 pdf2a.sh output.pdf
 
-mv output_2a.pdf "$dirout"/"$fname"-new.pdf
+mv output.pdf "$dirout"/"$fname"-imggray.pdf
 
 cd -
 rm -rf $tmpdir
